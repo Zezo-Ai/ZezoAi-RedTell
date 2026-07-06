@@ -95,7 +95,7 @@ def classify_tabpfn(img_dir):
     if not os.path.exists(annotations_path):
         raise FileNotFoundError(f"Annotations file not found at {annotations_path}. Please run annotation generation first.")
     
-    annotations = pd.read_csv(annotations_path, sep=";")
+    annotations = pd.read_csv(annotations_path)
 
     print("Merging features with annotations...")
     data_table = merge_features_with_annotations(features_table, annotations)

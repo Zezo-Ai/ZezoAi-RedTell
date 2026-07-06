@@ -1,0 +1,10 @@
+# Optional TabPFN classification dependencies.
+#
+# Install after the base environment is working:
+#   python -m pip install -r requirements-tabpfn.txt
+#
+# The extension is pinned to a commit so installs do not silently change when
+# the GitHub repository moves forward.
+tabpfn==8.0.8
+tabpfn-extensions[all] @ git+https://github.com/PriorLabs/tabpfn-extensions.git@1e4a6cd6695597e1bae3d103ac3f8849852bdee1
+# tabpfn-client

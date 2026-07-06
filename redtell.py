@@ -5,6 +5,7 @@ from segmentation.train import train_new_model
 from feature_extraction.extract_features import extract_features
 from annotation.generate_annotations import create_annotation_cells
 from feature_extraction.extract_reddino_features import extract_reddino_features
+from classification.classify_tabpfn import classify_tabpfn
 
 
 if __name__ == '__main__':
@@ -46,7 +47,8 @@ if __name__ == '__main__':
       num_cells = 200
     create_annotation_cells(data, num_cells)
 
+  elif funct == "classify_tabpfn":
+    classify_tabpfn(data)
 
   else:
     print("No such function.")
-
